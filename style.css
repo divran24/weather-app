@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #030400, #272439);
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+
+.card {
+    background: linear-gradient(135deg, #383937, #544e7b);
+    color: #708d20;
+    padding: 2em;
+    border-radius: 46px;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    margin: 16px;
+    text-transform: capitalize;
+    transition: all 0.3s ease, opacity 0.5 ease;
+}
+
+
+.search {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+    
+button {
+    border-radius: 23px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: none;
+    padding: 10px 12px;
+}
+
+input.search-bar {
+    font-size: 90%;
+    margin: 5px;
+    border-radius: 25px;
+    color: rgb(244, 241, 241);
+    background-color: rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: none;
+    padding: 11px 20px;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+button:hover {
+        background: rgba(0, 0, 0, 0.9);
+    }
+    
+input.search-bar:hover {
+        background-color:rgba(0, 0, 0, 0.9);
+    }
+
+    
+h2.temp {
+        margin: 5px;
+        margin-bottom: 0.4em;
+}
+
+.weather{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.descrip{
+    text-transform: uppercase;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 2px;
+    font-size: 15px;
+    color: white;
+}
+
+.subhead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.city{
+    text-transform: capitalize;
+}
+
+
+@media screen and (max-width: 600px){
+    .card{
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .subhead{
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 5vh 0;
+        line-height: 1px;
+    }
+}
+    
